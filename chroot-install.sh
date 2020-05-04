@@ -75,10 +75,16 @@ echo 'root:'$password | chpasswd
 useradd -m -G wheel -s /bin/zsh $user
 touch /home/$user/.zshrc
 chown $user:$user /home/$user/.zshrc
-mkdir /home/$user/org
-chown $user:$user /home/$user/org
-mkdir /home/$user/workspace
-chown $user:$user /home/$user/workspace
+mkdir /home/$user/prj
+chown $user:$user /home/$user/prj
+mkdir /home/$user/wrk
+chown $user:$user /home/$user/wrk
+mkdir /home/$user/xfer
+chown $user:$user /home/$user/xfer
+#mkdir /home/$user/org
+#chown $user:$user /home/$user/org
+#mkdir /home/$user/workspace
+#chown $user:$user /home/$user/workspace
 echo $user:$password | chpasswd
 echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
 
