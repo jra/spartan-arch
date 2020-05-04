@@ -32,7 +32,7 @@ echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 
 # setup hostname
 echo 'Setting up hostname'
-echo 'arch-virtualbox' > /etc/hostname
+echo 'blanca' > /etc/hostname
 
 # build
 echo 'Building'
