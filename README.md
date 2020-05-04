@@ -6,12 +6,12 @@ This is a set of scripts designed to automate the creation of a minimal VM runni
 - 8GB of space on disk
 - 1GB of RAM
 - Clipboard sharing in both directions enabled
-- Two shared folders `org` and `workspace` auto-mount and permanent
+- Two shared folders `prj`, `wrk`, and `xfer` auto-mount and permanent
 
 ## Installation
 Boot the VM on archlinux iso and then run the command
 ```shell
-wget https://goo.gl/ZPAMtT -O install.sh
+wget https://bit.ly/3c2Geh6 -O install.sh
 bash install.sh [user] [password] [fast]
 ```
 All arguments are optional and will be prompted for if not passed on invocation:
