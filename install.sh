@@ -50,7 +50,7 @@ echo "wrk /home/$user/wrk vboxsf uid=$user,gid=wheel,rw,dmode=700,fmode=600,nofa
 echo "xfer /home/$user/xfer vboxsf uid=$user,gid=wheel,rw,dmode=700,fmode=600,nofail 0 0" >> /mnt/etc/fstab
 
 # chroot
-wget https://raw.githubusercontent.com/abrochard/spartan-arch/master/chroot-install.sh -O /mnt/chroot-install.sh
+wget https://github.com/jra/spartan-arch/raw/master/chroot-install.sh -O /mnt/chroot-install.sh
 arch-chroot /mnt /bin/bash ./chroot-install.sh $user $password $fast
 
 # reboot
