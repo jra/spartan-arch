@@ -50,7 +50,7 @@ pacman -S --noconfirm xorg xorg-xinit xterm
 
 # install virtualbox guest modules
 echo 'Installing VB-guest-modules'
-pacman -S --noconfirm virtualbox-guest-modules-arch virtualbox-guest-utils
+pacman -S --noconfirm virtualbox-guest-utils xf86-video-vmware
 
 # vbox modules
 echo 'vboxsf' > /etc/modules-load.d/vboxsf.conf
