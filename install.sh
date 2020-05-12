@@ -41,7 +41,7 @@ swapon /dev/sda2
 mount /dev/sda1 /mnt
 
 # pacstrap
-pacstrap /mnt base
+pacstrap /mnt base base-devel dhcpcd
 
 # fstab
 genfstab -U /mnt >> /mnt/etc/fstab
